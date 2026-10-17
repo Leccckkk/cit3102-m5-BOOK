@@ -4,77 +4,13 @@
 **Section:** IT3E
 **Resource:** Book
 
-## 1. Project Description
+## Project Description
 
 The Book API is a REST API developed using Laravel, SQLite, and Laravel Sanctum. It allows users to register, log in, and manage book records through authenticated requests. Each book contains a title, author, genre, number of pages, and price. The API also supports filtering books by their fields.
 
-## 2. Setup Instructions
 
-### Requirements
 
-- PHP
-- Composer
-- Laravel
-- Bruno
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone [YOUR_REPOSITORY_URL]
-   cd book-api
-   ```
-
-2. Install the dependencies:
-
-   ```bash
-   composer install
-   ```
-
-3. Create the environment file:
-
-   ```bash
-   copy .env.example .env
-   ```
-
-4. Generate the application key:
-
-   ```bash
-   php artisan key:generate
-   ```
-
-5. Configure SQLite in `.env`:
-
-   ```dotenv
-   DB_CONNECTION=sqlite
-   ```
-
-6. Create an empty `database/database.sqlite` file if it does not exist.
-
-7. Install API routing and Sanctum if they are not already configured:
-
-   ```bash
-   php artisan install:api
-   ```
-
-8. Run the migrations:
-
-   ```bash
-   php artisan migrate
-   ```
-
-9. Start the Laravel server:
-
-   ```bash
-   php artisan serve
-   ```
-
-10. Open Bruno and use `http://127.0.0.1:8000` as the base URL.
-
-11. Register a user, log in, and use the returned Bearer token for protected requests.
-
-## 3. API Routes
+## API Routes
 
 | Method | Path | Description | Token Required |
 |---|---|---|---|
@@ -106,7 +42,7 @@ The Book API is a REST API developed using Laravel, SQLite, and Laravel Sanctum.
 - `GET /api/books?pages=400`
 - `GET /api/books?price=350`
 
-## 4. API Test Screenshots
+## API Test Screenshots
 
 ### Test 1 — Register a User (201)
 
