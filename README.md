@@ -1,7 +1,7 @@
 # Book API
 
-**Partners:** [Partner 1 Name], [Partner 2 Name]  
-**Section:** [Your Section]  
+**Partners:** ALEC RUPERT MENDOZA - JULLIANE RENEE GALANO
+**Section:** IT3E
 **Resource:** Book
 
 ## 1. Project Description
