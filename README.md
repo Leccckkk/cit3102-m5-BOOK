@@ -4,13 +4,70 @@
 **Section:** IT3E
 **Resource:** Book
 
-## Project Description
+## 1. Project Description
 
 The Book API is a REST API developed using Laravel, SQLite, and Laravel Sanctum. It allows users to register, log in, and manage book records through authenticated requests. Each book contains a title, author, genre, number of pages, and price. The API also supports filtering books by their fields.
 
+## 2. Setup Instructions
 
+### Requirements
 
-## API Routes
+- PHP
+- Composer
+- Laravel
+- Bruno
+
+### Installation
+
+1. Install the dependencies:
+
+   ```bash
+   composer install
+   ```
+
+2. Create the environment file:
+
+   ```bash
+   copy .env.example .env
+   ```
+
+3. Generate the application key:
+
+   ```bash
+   php artisan key:generate
+   ```
+
+4. Configure SQLite in `.env`:
+
+   ```dotenv
+   DB_CONNECTION=sqlite
+   ```
+
+5. Create an empty `database/database.sqlite` file if it does not exist.
+
+6. Install API routing and Sanctum if they are not already configured:
+
+   ```bash
+   php artisan install:api
+   ```
+
+7. Run the migrations:
+
+   ```bash
+   php artisan migrate
+   ```
+
+8. Start the Laravel server:
+
+   ```bash
+   php artisan serve
+   ```
+
+9. Open Bruno and use `http://127.0.0.1:8000` as the base URL.
+
+10. Register a user, log in, and use the returned Bearer token for protected requests.
+
+## 3. API Routes
 
 | Method | Path | Description | Token Required |
 |---|---|---|---|
@@ -42,7 +99,7 @@ The Book API is a REST API developed using Laravel, SQLite, and Laravel Sanctum.
 - `GET /api/books?pages=400`
 - `GET /api/books?price=350`
 
-## API Test Screenshots
+## 4. API Test Screenshots
 
 ### Test 1 — Register a User (201)
 
@@ -85,5 +142,6 @@ The Book API is a REST API developed using Laravel, SQLite, and Laravel Sanctum.
 ![Test 10: Delete Book](screenshots/10-delete-book.png)
 
 ## 5. Why Does DELETE Return 204 Instead of 200?
+
 
 Answer: The reason why DELETE returned 204 instead of 200 is because, even though it returned a successful process, the system returned a blank page. Since the user (Us) deleted the records, the database has nothing to return, thus the 204. 
