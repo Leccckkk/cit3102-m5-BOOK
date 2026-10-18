@@ -101,6 +101,8 @@ The Book API is a REST API developed using Laravel, SQLite, and Laravel Sanctum.
 
 ## 4. API Test Screenshots
 
+SCREENSHOTS BY ALEC RUPERT MENDOZA
+
 ### Test 1 — Register a User (201)
 
 ![Test 1: Register](screenshots/01-register.png)
@@ -140,6 +142,48 @@ The Book API is a REST API developed using Laravel, SQLite, and Laravel Sanctum.
 ### Test 10 — Delete a Book (204)
 
 ![Test 10: Delete Book](screenshots/10-delete-book.png)
+
+SCREENSHOTS BY JULLIANE RENEE GALANO
+
+### Test 1 — Register a User (201)
+
+![Test 1: Register](screenshots/01-registerr.png)
+
+### Test 2 — Login (200)
+
+![Test 2: Login](screenshots/02-loginn.png)
+
+### Test 3 — Get Books Without a Token (401)
+
+![Test 3: Unauthorized](screenshots/03-books-no-tokenn.png)
+
+### Test 4 — Get Books With a Token (200)
+
+![Test 4: Authorized](screenshots/04-books-with-tokenn.png)
+
+### Test 5 — Create a Book (201)
+
+![Test 5: Create Book](screenshots/05-create-bookk.png)
+
+### Test 6 — Missing Required Field (422)
+
+![Test 6: Validation Error](screenshots/06-validation-errorr.png)
+
+### Test 7 — Get a Book by ID (200)
+
+![Test 7: Get Book](screenshots/07-get-bookk.png)
+
+### Test 8 — Get a Nonexistent Book (404)
+
+![Test 8: Book Not Found](screenshots/08-book-not-foundd.png)
+
+### Test 9 — Update a Book (200)
+
+![Test 9: Update Book](screenshots/09-update-bookk.png)
+
+### Test 10 — Delete a Book (204)
+
+![Test 10: Delete Book](screenshots/10-delete-bookk.png)
 
 ## 5. Why Does DELETE Return 204 Instead of 200?
 
